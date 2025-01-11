@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
       angular-controls works!
     </p>
   `,
+  standalone: false,
   styles: [
   ]
 })
