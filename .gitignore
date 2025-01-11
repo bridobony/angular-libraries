@@ -42,3 +42,4 @@ testem.log
 Thumbs.db
 /.vs
 /.vscode
+/projects/angular-controls/node_modules

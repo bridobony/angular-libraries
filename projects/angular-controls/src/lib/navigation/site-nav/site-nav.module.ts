@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SiteNavComponent } from './site-nav/site-nav.component';
+import { SiteNavComponent } from './site-nav.component';
+import { SharedServiceModule } from '../../../services/shared-service.module';
 
 
 
@@ -9,7 +10,11 @@ import { SiteNavComponent } from './site-nav/site-nav.component';
     SiteNavComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedServiceModule
+  ],
+  exports: [
+    SiteNavComponent
   ]
 })
 export class SiteNavModule { }
