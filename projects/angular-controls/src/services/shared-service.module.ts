@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarService } from './navbar.service';
-import { HttpClientModule } from '@angular/common/http';
+import { JsonService } from './json.service';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    HttpClientModule
   ],
   providers: [
-    NavbarService
+    JsonService
   ]
 })
 export class SharedServiceModule { }

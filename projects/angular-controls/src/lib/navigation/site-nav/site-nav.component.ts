@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { NavbarService } from '../../../services/navbar.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { JsonService } from '../../../services/json.service';
+import { sitenav } from './sitenav.model';
 
 @Component({
   selector: 'lib-site-nav',
@@ -8,12 +9,14 @@ import { NavbarService } from '../../../services/navbar.service';
   styleUrls: ['./site-nav.component.css']
 })
 export class SiteNavComponent implements OnInit {
-  navbarItems: any; // Ensure default structure
+  @Input() jsonUrl!: string;
+  classNames: string[] = ['left', 'right'];
+  navbarItems!: sitenav;
   menuOpen: boolean = false;
-  constructor(private navbarService: NavbarService) { }
+  constructor(private jsonService: JsonService) { }
 
   ngOnInit() {
-    this.navbarService.getNavbarItems().subscribe(data => {
+    this.jsonService.getModel<sitenav>(this.jsonUrl).subscribe(data => {
       this.navbarItems = data;
     });
   }
