@@ -1,0 +1,51 @@
+{
+  "logo": "images/logo_sm.png",
+  "logotext": "Nav<br/> Bar",
+  "left": [
+    {
+      "label": "Home",
+      "url": "/",
+      "icon": "fas fa-home"
+    },
+    {
+      "label": "About",
+      "url": "/about",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "label": "Services",
+      "icon": "fas fa-concierge-bell",
+      "submenu": [
+        {
+          "label": "Consulting",
+          "url": "/services/consulting"
+        },
+        {
+          "label": "Development",
+          "url": "/services/development"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "url": "/contact",
+      "icon": "fas fa-envelope"
+    }
+  ],
+  "right": [
+    {
+      "label": "Profile",
+      "url": "/profile",
+      "icon": "fas fa-user"
+    },
+    {
+      "label": "Settings",
+      "url": "/settings",
+      "icon": "fas fa-cog"
+    },
+    {
+      "url": "/logout",
+      "icon": "fas fa-sign-out-alt"
+    }
+  ]
+}

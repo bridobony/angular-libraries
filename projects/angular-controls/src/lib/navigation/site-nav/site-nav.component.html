@@ -1,9 +1,8 @@
-
-<nav>
+<nav *ngIf="navbarItems">
   <div class="navbar-logo">
     <a href="/" class="logo-link">
-      <img src="assets/images/CourseStudio.png" alt="Logo">
-      <div class="logo-text">Course<br />Studio</div>
+      <img [src]="navbarItems.logo" alt="Logo">
+      <div class="logo-text" [innerHtml]="navbarItems.logotext"></div>
     </a>
   </div>
   <div *ngIf="!menuOpen" class="navbar-toggle" (click)="toggleMenu()"> <i class="fas fa-chevron-down"></i> </div>

@@ -8,8 +8,13 @@ nav {
 }
 
 .navbar-logo {
-  margin-right: 50px; /* Space between logo and left navbar items */
-  background-color: transparent;
+    display: flex;
+    background-color: transparent;
+}
+
+.logo-link {
+    align-items:center;
+    display: flex;
 }
 
 .logo-link img {
@@ -19,16 +24,12 @@ nav {
 }
 
 .logo-text {
-  display: inline-block;
-  position: absolute;
   color: white;
   text-align: center; /* Centers text within the div */
   font-size: 24px; /* Adjustable based on your preference */
   line-height: 1; /* Adjusts line height to center text vertically */
   font-family: 'Arial', sans-serif; /* Choose your preferred font family */
   font-weight: bold;
-  height: 70px;
-  margin-top: 16px;
 }
 
 .navbar-left, .navbar-right {

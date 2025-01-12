@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "logo": {
+      "type": "string"
+    },
+    "logotext": {
+      "type": "string"
+    },
+    "left": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Left"
+      }
+    },
+    "right": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Right"
+      }
+    }
+  },
+  "definitions": {
+    "Submenu": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    },
+    "Left": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "submenu": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Submenu"
+          }
+        }
+      }
+    },
+    "Right": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-angular-controls',
   template: `
     <p>
-      angular-controls works!
+      <lib-site-nav></lib-site-nav>
     </p>
   `,
   standalone: false,

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NavbarService {
-  private jsonUrl = 'assets/config/navbar.json';
+  private jsonUrl = 'config/navbar.json';
 
   constructor(private http: HttpClient) { }
 

@@ -3,11 +3,12 @@ import { NavbarService } from '../../../services/navbar.service';
 
 @Component({
   selector: 'lib-site-nav',
+  standalone: false,
   templateUrl: './site-nav.component.html',
   styleUrls: ['./site-nav.component.css']
 })
 export class SiteNavComponent implements OnInit {
-  navbarItems: { left: any[]; right: any[]; } = { left: [], right: [] }; // Ensure default structure
+  navbarItems: any; // Ensure default structure
   menuOpen: boolean = false;
   constructor(private navbarService: NavbarService) { }
 

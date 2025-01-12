@@ -1,0 +1,30 @@
+{
+  "logo": "images/logo.png",
+  "logotext": "My Site",
+  "left": [
+    {
+      "label": "First Menu",
+      "url": "route",
+      "icon": "fas fa-concierge-bell",
+      "submenu": [
+        {
+          "label": "label",
+          "url": "url"
+        }
+      ]
+    },
+    {
+      "label": "Button",
+      "url": "route",
+      "icon": "fas fa-info-circle"
+    }
+
+  ],
+  "right": [
+    {
+      "label": "Right Button",
+      "url": "route",
+      "icon": "fas fa-info-circle"
+    }
+  ]
+}
