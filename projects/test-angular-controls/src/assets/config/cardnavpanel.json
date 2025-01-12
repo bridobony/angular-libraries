@@ -1,0 +1,13 @@
+[
+  {
+    "lefticon": "fas fa-home",
+    "url": "/",
+    "righticon": "fas fa-chevron-right"
+  },
+  {
+    "lefticon": "fas fa-info-circle",
+    "url": "/about",
+    "target": "_self",
+    "righticon": "fas fa-chevron-right"
+  }
+]
