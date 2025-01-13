@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { JsonService } from './json.service';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [],
-  imports: [
-  ],
+  imports: [CommonModule],
   providers: [
     JsonService
   ]

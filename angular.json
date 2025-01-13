@@ -31,6 +31,14 @@
             "polyfills": [
               "zone.js",
               "zone.js/testing"
+            ],
+            "main": "projects/angular-controls/src/test.ts",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/angular-controls/src/test",
+                "output": "test"
+              }
             ]
           }
         }

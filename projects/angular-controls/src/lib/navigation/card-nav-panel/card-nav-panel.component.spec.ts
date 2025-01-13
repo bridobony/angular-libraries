@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CardNavPanelComponent } from './card-nav-panel.component';
+import { AngularControlsModule } from '../../angular-controls.module';
 
 describe('CardNavPanelComponent', () => {
   let component: CardNavPanelComponent;
@@ -8,7 +8,7 @@ describe('CardNavPanelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardNavPanelComponent]
+      imports: [AngularControlsModule]
     })
     .compileComponents();
 

@@ -1,6 +1,6 @@
 {
   "name": "@bridobony/angular-controls",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "Brian Dobony",
   "license": "MIT",
   "main": "public-api.ts",
