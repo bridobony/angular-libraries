@@ -10,7 +10,9 @@ import { cardnavpanelitem } from './cardnavpanelitem.model';
 })
 export class CardNavPanelComponent {
   @Input() jsonUrl!: string;
+  @Input() size: string = "large";
   cardNavItems: cardnavpanelitem[] = [];
+  
   menuOpen: boolean = false;
   constructor(private jsonService: JsonService) { }
 

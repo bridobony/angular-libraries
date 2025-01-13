@@ -1,5 +1,5 @@
 <div class="card-container">
-  <a *ngFor="let item of cardNavItems" class="card" [target]="item.target" rel="noopener" [href]="item.url">
+  <a *ngFor="let item of cardNavItems" [ngClass]="['card', size ]" [target]="item.target" rel="noopener" [href]="item.url">
     <i [class]="item.lefticon"></i>&nbsp;&nbsp;
     <span>Learn Angular</span>
     &nbsp;&nbsp;<i [class]="item.righticon"></i>
