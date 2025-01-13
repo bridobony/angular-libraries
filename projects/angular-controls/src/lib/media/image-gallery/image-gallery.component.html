@@ -1,0 +1,15 @@
+<div class="gallery-container">
+  <div class="gallery-thumbnails">
+    <img *ngFor="let img of images; let i = index" [src]="img.thumbnail"
+         [alt]="img.alt" (click)="openLightbox(i)">
+  </div>
+
+  <div class="lightbox" *ngIf="isLightboxOpen">
+    <span class="close" (click)="closeLightbox()">&times;</span>
+    <img [src]="currentImage.large" [alt]="currentImage.alt" class="lightbox-image">
+    <div class="lightbox-navigation">
+      <button (click)="showPrevImage()">&#10094;</button>
+      <button (click)="showNextImage()">&#10095;</button>
+    </div>
+  </div>
+</div>
