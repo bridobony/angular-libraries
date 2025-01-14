@@ -1,0 +1,41 @@
+{
+  "logo": "images/logo.png",
+  "logotext": "",
+  "left": [
+    {
+      "label": "Home",
+      "url": "/",
+      "icon": "fas fa-home"
+    },
+    {
+      "label": "Navigation",
+      "icon": "fas fa-concierge-bell",
+      "submenu": [
+        {
+          "label": "Site Nav",
+          "url": "/sitenav",
+          "icon": "fas fa-info-circle"
+        },
+        {
+          "label": "Card Nav Panel",
+          "url": "/cardnavpanel"
+        }
+      ]
+    }
+  ],
+  "right": [
+    {
+      "label": "Profile",
+      "url": "/profile",
+      "icon": "fas fa-user"
+    },
+    {
+      "url": "/settings",
+      "icon": "fas fa-cog"
+    },
+    {
+      "url": "/logout",
+      "icon": "fas fa-sign-out-alt"
+    }
+  ]
+}
