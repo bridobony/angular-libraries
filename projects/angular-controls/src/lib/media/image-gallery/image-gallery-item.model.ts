@@ -1,5 +1,4 @@
 export interface ImageGalleryItem {
-  thumbnail: string;
-  large: string;
+  url: string;
   alt: string;
 }

@@ -15,12 +15,14 @@ nav {
 .logo-link {
     align-items:center;
     display: flex;
+    text-decoration:none;
 }
 
 .logo-link img {
   height: 70px;
   width: auto;
   padding-top: 6px;
+  padding-right:5px;
 }
 
 .logo-text {
