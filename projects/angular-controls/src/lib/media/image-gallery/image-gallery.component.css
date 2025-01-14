@@ -1,0 +1,38 @@
+.gallery-container {
+  position: relative;
+  width: 100%;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail {
+  
+  width: 100px; /* Adjust based on spacing needs */
+  position: relative;
+  box-shadow: 1px 1px 3px #0008;
+  transition: transform .4s ease-out, box-shadow .3s, z-index .3s;
+  z-index: 0;
+  transform: rotate(var(--rotate-degree)) scale(1); /* Apply dynamic tilt */
+}
+
+.thumbnail--enlarged {
+  position: fixed; /* Ensure it stays centered */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); /* Center the image */
+  width: 90%; /* Scale to 100% width */
+  height: auto;
+  box-shadow: 3px 4px 10px #0006;
+  z-index: 999
+}
+.thumbnail:not(.thumbnail--enlarged):hover {
+    transform: scale(1.2); /* Center the image and scale it up */
+    
+  }

@@ -1,0 +1,6 @@
+<div class="gallery-container">
+  <div class="thumbnails"> 
+    <img *ngFor="let img of images; let i = index" [style.--rotate-degree]="rotatedDegrees[i]+'deg'" [src]="img.url"
+         [alt]="img.alt" class="thumbnail" [ngClass]="{'thumbnail--enlarged': isEnlarged(i)}" (click)="enlargeImage(i)" />
+  </div>
+</div>

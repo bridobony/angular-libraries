@@ -7,3 +7,5 @@ export * from './lib/navigation/site-nav/site-nav.module';
 export * from './lib/navigation/site-nav/site-nav.component';
 export * from './lib/navigation/card-nav-panel/card-nav-panel.module'
 export * from './lib/navigation/card-nav-panel/card-nav-panel.component'
+export * from './lib/media/image-gallery/image-gallery.component'
+export * from './lib/media/image-gallery/image-gallery.module'

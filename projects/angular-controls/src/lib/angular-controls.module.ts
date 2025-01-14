@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SiteNavModule } from './navigation/site-nav/site-nav.module'
-import { CardNavPanelModule } from '../public-api';
+import { ImageGalleryModule } from './media/image-gallery/image-gallery.module';
 import { SharedServiceModule } from '../services/shared-service.module';
-import { BrowserModule } from '@angular/platform-browser';
+import { CardNavPanelModule } from './navigation/card-nav-panel/card-nav-panel.module';
 
 
 @NgModule({
@@ -12,11 +12,11 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     CommonModule,
     SiteNavModule,
-    CardNavPanelModule,
-    SharedServiceModule
+    ImageGalleryModule
   ],
   exports: [
     SiteNavModule,
+    ImageGalleryModule,
     CardNavPanelModule
   ]
 })
